@@ -9,11 +9,11 @@ luxurious_lamp_price = 52.15
 sales_tax = .088
 customer_one_total = 0
 customer_one_itemization = ""
-customer_one_total += customer_one_total + lovely_loveseat_price
-customer_one_itemization += customer_one_itemization + lovely_loveseat_description
-customer_one_total += customer_one_total + luxurious_lamp_price
-customer_one_itemization += customer_one_itemization + luxurious_lamp_description
+customer_one_total = customer_one_total + lovely_loveseat_price
+customer_one_itemization = customer_one_itemization + lovely_loveseat_description
+customer_one_total = customer_one_total + luxurious_lamp_price
+customer_one_itemization = customer_one_itemization + luxurious_lamp_description
 customer_one_tax = customer_one_total * sales_tax
-customer_one_total += customer_one_total + customer_one_tax
+customer_one_total = customer_one_total + customer_one_tax
 print("Customer One Items: " + customer_one_itemization)
-print("Customer One Total: " + (customer_one_total))
+print("Customer One Total: " , (customer_one_total))
